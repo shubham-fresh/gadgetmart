@@ -1,0 +1,254 @@
+.list-component {
+    padding: 0 24px;
+}
+
+.lc-area {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #efefef;
+}
+
+.lc-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.lc-filter-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    color: #777777;
+}
+
+.lc-filter-btn:hover {
+    background-color: #f5f5f5;
+    border-radius: 2px;
+}
+
+.lc-search-box {
+    flex: 1;
+    height: 36px;
+    border: 1px solid #ced4da;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+    position: relative;
+    border-radius: 2px;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.lc-search-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    color: #aaa;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lc-search-input {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 6px 16px 6px 36px;
+    color: #212529;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    z-index: 1;
+}
+
+.lc-search-box:focus-within {
+    box-shadow: 0 0 5px #aaa;
+}
+
+.lc-list {
+    width: 100%;
+    border-top: 1px solid #ced4da;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.wf-1 {
+    flex: 1;
+}
+.wf-2 {
+    flex: 2;
+}
+.wf-3 {
+    flex: 3;
+}
+.wf-4 {
+    flex: 4;
+}
+
+.lc-list-item {
+    list-style: none;
+    font-size: 15px;
+    color: #333333;
+}
+
+.lc-sort-btn {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.lc-sort-btn:hover {
+    background-color: #f0f2f5;
+}
+
+.lc-col-title {
+    display: block;
+    padding: 12px;
+}
+
+.lc-col-head {
+    font-size: 15px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.lc-helper-btn {
+    font-size: 18px;
+    width: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #212529;
+}
+
+.lc-helper {
+  width: 32px;
+  position: relative;
+}
+
+.lc-helper-btn:hover {
+    background-color: #f0f2f5;
+    border-radius: 2px;
+}
+
+.lc-helper-list {
+    box-shadow: 0 0 5px #ced4da;
+    border-radius: 2px;
+    padding: 8px 0px;
+    width: 160px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.lc-helper-item {
+    list-style: none;
+}
+
+.lc-helper-opt {
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    color: #212529;
+    padding: 4px 16px;
+}
+
+.lc-helper-opt:hover {
+    background-color: #f0f2f5;
+}
+
+.lc-pg-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-top: 1px solid #ced4da;
+}
+
+.lc-left-pg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.lc-pg-btn {
+    font-family: "Roboto", serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #212529;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ebedf0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.lc-pg-btn:hover {
+    background-color: #e1e3e5;
+}
+
+.lc-right-pg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lc-pg-para {
+    font-size: 15px;
+    color: #212529;
+}
+
+.lc-pg-para:last-of-type::before {
+    content: "/";
+    color: #777777;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.lc-pg-select {
+    border: 1px solid #ced4da;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* ---------------------------------------------- */
+
+.bg-yellow {
+    background-color: #ffd333;
+}

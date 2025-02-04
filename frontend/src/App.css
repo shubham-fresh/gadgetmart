@@ -1,0 +1,33 @@
+#App {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-left {
+  width: 240px;
+  overflow: hidden;
+  position: sticky;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: all 0.5s linear;
+}
+
+.wd-0 {
+  width: 0px;
+}
+
+.ht-0 {
+  height: 0px;
+}
+
+.app-right {
+  flex: 1;
+}
+
+.hide {
+  display: none;
+}

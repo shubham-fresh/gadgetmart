@@ -1,0 +1,142 @@
+.pf-page {
+    margin: 0 8px;
+}
+
+.product-form {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.pf-flex2 {
+    flex: 2;
+}
+
+.pf-flex1 {
+    flex: 1;
+}
+
+.pf-left, .pf-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pf-box {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 24px;
+}
+
+.pf-box-title {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.pf-box-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pf-box-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pf-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.pf-input {
+    height: 36px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    outline-color: #bbb;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+}
+
+.pf-input::-webkit-inner-spin-button,
+.pf-input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.pf-image-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.pf-prod-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pf-file-input {
+    padding: 10px 0;
+    border: 1px solid #ced4da;
+    flex: 1;
+}
+
+.pf-textarea {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    outline-color: #bbb;
+    resize: none;
+    letter-spacing: 0.5px;
+}
+
+.pf-del-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pf-del-btn:hover {
+    background-color: #efefef;
+    color: red;
+}
+
+.pf-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.pf-add-btn {
+    font-size: 14px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pf-select {
+    height: 36px;
+    border: 1px solid#ced4da;
+    outline-color: #bbb;
+}
+
+.pf-box-para {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #515151;
+}

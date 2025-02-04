@@ -1,0 +1,231 @@
+.navbar {
+    background-color: #fff;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px #eee;
+    z-index: 10;
+}
+
+.nav-left-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-btn-box {
+    margin-left: 8px;
+    width: 36px;
+    height: 36px;
+}
+
+.nav-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212529;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #ebedf0;
+}
+
+.nav-search-box {
+    height: 100%;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-search-content {
+    background-color: #ebedf0;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+    z-index: 0;
+}
+
+.nav-search-icon {
+    font-size: 20px;
+    width: 36px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: #888888;
+    background-color: transparent;
+}
+
+.nav-search-input {
+    width: 360px;
+    height: 100%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #212529;
+    border: none;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: transparent;
+    padding: 1px 12px 1px 36px;
+}
+
+.nav-right-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-notif-box {
+    height: 100%;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.nav-notif-icon {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-notif-icon:hover {
+    background-color: #ebedf0;
+}
+
+.nav-notif-bubble {
+    font-size: 10px;
+    background-color: #ffd333;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-prof-box {
+    height: 100%;
+    position: relative;
+}
+
+.nav-prof-btn {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    font-family: "Roboto", serif;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-prof-btn:hover {
+    background-color: #ebedf0;
+}
+
+.nav-prof-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-prof-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-prof-right {
+    height: 100%;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nav-prof-name1 {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.nav-prof-name2 {
+    color: #212529;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: #6c757d;
+}
+
+.nav-prof-list {
+    box-shadow: 0 0 10px #ebedf0;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    background-color: #fff;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.nav-prof-item {
+    list-style: none;
+}
+
+.nav-prof-link {
+    padding: 4px 16px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #212529;
+}
+
+.nav-prof-link:hover {
+    background-color: #ebedf0;
+}
+
+
+/* --------------------------------------------- */
+
+.bg-grey {
+    background-color: #ebedf0;
+}
