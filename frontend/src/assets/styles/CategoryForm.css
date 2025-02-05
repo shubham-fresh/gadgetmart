@@ -1,0 +1,84 @@
+.cf-page {
+    margin: 0 8px;
+}
+
+.cf-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.cf-submit-btn {
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+    background-color: #ffd333;
+    color: #212529;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.cf-submit-btn:hover {
+    background-color: #f5c000;
+}
+
+.category-form {
+    padding: 0 24px;
+    gap: 24px;
+}
+
+.cf-box {
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 24px;
+    width: 100%;
+}
+
+.cf-box-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cf-box-title {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.cf-box-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cf-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.cf-input {
+    height: 36px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    outline-color: #bbb;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+}
+
+.cf-textarea {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    outline-color: #bbb;
+    resize: none;
+    letter-spacing: 0.5px;
+}

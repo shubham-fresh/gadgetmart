@@ -1,14 +1,6 @@
 .page-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-}
-
-.ph-left {
     flex: 1;
+    padding: 24px 0;
 }
 
 .ph-nav-link, .ph-nav-span {
@@ -35,23 +27,4 @@
     color: #212529;
     font-weight: 500;
     margin-top: 5px;
-}
-
-.ph-right {
-    height: 100%;
-    display: flex;
-}
-
-.ph-link-btn {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: #ffd333;
-    color: #212529;
-    padding: 8px 16px;
-    border-radius: 2px;
-}
-
-.ph-link-btn:hover {
-    background-color: #f5c000;
 }

@@ -6,6 +6,7 @@ import { FaDatabase } from "react-icons/fa6";
 import { GiHanger } from "react-icons/gi";
 import { RiShoppingCartLine, RiCoupon2Line } from "react-icons/ri";
 import { IoPersonOutline } from "react-icons/io5";
+import { TbBrandBing } from "react-icons/tb";
 import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -47,7 +48,7 @@ const Sidebar = () => {
                 {
                     id: 22,
                     title: "Add Category",
-                    to: "#"
+                    to: "/category/add"
                 }
             ]
         },
@@ -99,6 +100,23 @@ const Sidebar = () => {
                     id: 52,
                     title: "Add Coupon",
                     to: "#"
+                }
+            ]
+        },
+        {
+            id: "6",
+            title: "Brand",
+            icon: <TbBrandBing/>,
+            submenu: [
+                {
+                    id: 61,
+                    title: "Brand List",
+                    to: "/brand/list"
+                },
+                {
+                    id: 62,
+                    title: "Add Brand",
+                    to: "/brand/add"
                 }
             ]
         },

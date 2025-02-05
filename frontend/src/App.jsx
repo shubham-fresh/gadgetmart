@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import ProductList from './pages/ProductList';
 import ProductForm from './forms/ProductForm';
+import PageFooter from './components/PageFooter';
+import CategoryForm from './forms/CategoryForm';
+import BrandForm from './forms/BrandForm';
 
 function App() {
 
@@ -22,7 +25,10 @@ function App() {
           <Routes>
             <Route path="/product/list" element={<ProductList/>}/>
             <Route path="/product/add" element={<ProductForm/>}/>
+            <Route path="/category/add" element={<CategoryForm/>}/>
+            <Route path="/brand/add" element={<BrandForm/>}/>
           </Routes>
+          <PageFooter/>
         </div>
       </div>
     </BrowserRouter>
