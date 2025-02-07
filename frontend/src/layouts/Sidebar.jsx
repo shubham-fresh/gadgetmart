@@ -99,13 +99,13 @@ const Sidebar = () => {
                 {
                     id: 52,
                     title: "Add Coupon",
-                    to: "#"
+                    to: "/coupon/add"
                 }
             ]
         },
         {
             id: "6",
-            title: "Brand",
+            title: "Brands",
             icon: <TbBrandBing/>,
             submenu: [
                 {
@@ -117,6 +117,23 @@ const Sidebar = () => {
                     id: 62,
                     title: "Add Brand",
                     to: "/brand/add"
+                }
+            ]
+        },
+        {
+            id: "7",
+            title: "Sellers",
+            icon: <TbBrandBing/>,
+            submenu: [
+                {
+                    id: 71,
+                    title: "Seller List",
+                    to: "/seller/list"
+                },
+                {
+                    id: 72,
+                    title: "Add Seller",
+                    to: "/seller/add"
                 }
             ]
         },

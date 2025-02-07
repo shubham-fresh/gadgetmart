@@ -17,7 +17,7 @@ const ProductForm = () => {
                 <button className="pf-submit-btn">Save</button>
             </div>
 
-            <div action="" className="product-form">
+            <div className="product-form">
                 <div className="pf-left pf-flex2">
                     <div className="pf-box">
                         <h2 className="pf-box-title">Basic Information</h2>
