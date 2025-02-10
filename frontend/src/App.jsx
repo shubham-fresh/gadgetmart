@@ -11,6 +11,10 @@ import CategoryForm from './forms/CategoryForm';
 import BrandForm from './forms/BrandForm';
 import SellerForm from './forms/SellerForm';
 import CouponForm from './forms/CouponForm';
+import CategoryList from './pages/CategoryList';
+import CouponList from './pages/CouponList';
+import BrandList from './pages/BrandList';
+import SellerList from './pages/SellerList';
 
 function App() {
 
@@ -26,6 +30,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/product/list" element={<ProductList/>}/>
+            <Route path="/category/list" element={<CategoryList/>}/>
+            <Route path="/coupon/list" element={<CouponList/>}/>
+            <Route path="/brand/list" element={<BrandList/>}/>
+            <Route path="/seller/list" element={<SellerList/>}/>
+
             <Route path="/product/add" element={<ProductForm/>}/>
             <Route path="/category/add" element={<CategoryForm/>}/>
             <Route path="/brand/add" element={<BrandForm/>}/>

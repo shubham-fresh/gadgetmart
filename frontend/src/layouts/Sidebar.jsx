@@ -43,7 +43,7 @@ const Sidebar = () => {
                 {
                     id: 21,
                     title: "Categories List",
-                    to: "#"
+                    to: "/category/list"
                 },
                 {
                     id: 22,
@@ -94,7 +94,7 @@ const Sidebar = () => {
                 {
                     id: 51,
                     title: "Coupons List",
-                    to: "#"
+                    to: "/coupon/list"
                 },
                 {
                     id: 52,

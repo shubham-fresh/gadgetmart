@@ -1,8 +1,8 @@
-.product-list {
+.list-page {
     margin: 0 8px;
 }
 
-.pl-head {
+.lp-head {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,7 +10,7 @@
     padding: 0 24px;
 }
 
-.pl-link-btn {
+.lp-link-btn {
     text-decoration: none;
     border: none;
     font-size: 15px;
@@ -23,6 +23,6 @@
     cursor: pointer;
 }
 
-.pl-link-btn:hover {
+.lp-link-btn:hover {
     background-color: #f5c000;
 }

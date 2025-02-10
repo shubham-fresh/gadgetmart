@@ -5,7 +5,9 @@ import { FaSortUp, FaSortDown } from "react-icons/fa6";
 import { HiMiniAdjustmentsHorizontal } from "react-icons/hi2";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
-const ListComponent = () => {
+const ListComponent = (props) => {
+
+    const { labels, dataKeys, data } = props.listDetails;
 
     const [ activeProd, setActiveProd ] = useState(null);
     const [ activePage, setActivePage ] = useState(1);
@@ -44,80 +46,7 @@ const ListComponent = () => {
         }
     }, []);
 
-    const labels = [
-        {
-            "id": "0",
-            "title": "ID",
-            "width": "2"
-        },
-        {
-            "id": "1",
-            "title": "Products",
-            "width": "4"
-        },
-        {
-            "id": "2",
-            "title": "Category",
-            "width": "2"
-        },
-        {
-            "id": "3",
-            "title": "Stock",
-            "width": "2"
-        },
-        {
-            "id": "1",
-            "title": "Price",
-            "width": "2"
-        },
-    ]
-
-    const dataKeys = ["id", "title", "category", "stock", "Price"];
-
-    const data = [
-        {
-            "id": "110",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-        {
-            "id": "111",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-        {
-            "id": "112",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-        {
-            "id": "113",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-        {
-            "id": "114",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-        {
-            "id": "115",
-            "title": "iPhone 15 Pro",
-            "category": "Mobile",
-            "stock": "Available",
-            "Price": "$215"
-        },
-    ]
+    
 
     return (
         <div className="list-component">
