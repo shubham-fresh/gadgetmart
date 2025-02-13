@@ -15,6 +15,7 @@ import CategoryList from './pages/CategoryList';
 import CouponList from './pages/CouponList';
 import BrandList from './pages/BrandList';
 import SellerList from './pages/SellerList';
+import LoginPage from './auth/LoginPage';
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
         <div className="app-right">
           <Navbar />
           <Routes>
+            <Route path="/login" element={<LoginPage/>}/>
+
             <Route path="/product/list" element={<ProductList/>}/>
             <Route path="/category/list" element={<CategoryList/>}/>
             <Route path="/coupon/list" element={<CouponList/>}/>
