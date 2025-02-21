@@ -4,6 +4,8 @@ import connectDB from "./db/connectDB.js";
 import brandRouters from "./routes/brandRouters.js";
 import categoryRouters from "./routes/categoryRouters.js";
 import couponRouters from "./routes/couponRouters.js";
+import sellerRouters from "./routes/sellerRouters.js";
+import productRouters from "./routes/productRouters.js";
 
 dotenv.config();
 connectDB();
@@ -15,6 +17,8 @@ server.use(express.json());
 server.use("/api/brand", brandRouters);
 server.use("/api/category", categoryRouters);
 server.use("/api/coupon", couponRouters);
+server.use("/app/seller", sellerRouters);
+server.use("/api/product", productRouters);
 
 
 server.all("*", (req, resp) => {
