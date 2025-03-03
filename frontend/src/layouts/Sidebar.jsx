@@ -143,6 +143,12 @@ const Sidebar = () => {
             icon: <TbBrandBing/>,
             to: "/login"
         },
+        {
+            id: "9",
+            title: "Signup",
+            icon: <TbBrandBing/>,
+            to: "/signup"
+        },
     ];
 
 

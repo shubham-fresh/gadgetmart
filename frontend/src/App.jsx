@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './layouts/Navbar';
 import Sidebar from './layouts/Sidebar';
@@ -16,21 +16,28 @@ import CouponList from './pages/CouponList';
 import BrandList from './pages/BrandList';
 import SellerList from './pages/SellerList';
 import LoginPage from './auth/LoginPage';
+import SignUpPage from './auth/SignUpPage';
 
 function App() {
 
   const isSidebarActive = useSelector((state) => state.basic.isSidebarActive);
+  const [ user, setUser ] = useState(false);
 
   return (
     <BrowserRouter>
       <div id="App">
-        <div className={`app-left ${!isSidebarActive && "wd-0"}`}>
-          <Sidebar />
-        </div>
+        {
+          user && (<div className={`app-left ${!isSidebarActive && "wd-0"}`}>
+            <Sidebar />
+          </div>)
+        }
         <div className="app-right">
-          <Navbar />
+          {
+            user && <Navbar />
+          }
           <Routes>
             <Route path="/login" element={<LoginPage/>}/>
+            <Route path="/signup" element={<SignUpPage/>}/>
 
             <Route path="/product/list" element={<ProductList/>}/>
             <Route path="/category/list" element={<CategoryList/>}/>
@@ -44,7 +51,9 @@ function App() {
             <Route path="/seller/add" element={<SellerForm/>}/>
             <Route path="/coupon/add" element={<CouponForm/>}/>
           </Routes>
-          <PageFooter/>
+          {
+            user && <PageFooter/>
+          }
         </div>
       </div>
     </BrowserRouter>

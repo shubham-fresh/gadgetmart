@@ -6,6 +6,7 @@ import categoryRouters from "./routes/categoryRouters.js";
 import couponRouters from "./routes/couponRouters.js";
 import sellerRouters from "./routes/sellerRouters.js";
 import productRouters from "./routes/productRouters.js";
+import userRouters from "./routes/userRouters.js";
 
 dotenv.config();
 connectDB();
@@ -19,6 +20,7 @@ server.use("/api/category", categoryRouters);
 server.use("/api/coupon", couponRouters);
 server.use("/app/seller", sellerRouters);
 server.use("/api/product", productRouters);
+server.use("/api/user", userRouters);
 
 
 server.all("*", (req, resp) => {

@@ -18,7 +18,7 @@ const LoginPage = () => {
             <h2 className="login-title">Login</h2>
             <form className="login-form" onSubmit={submitHandler}>
                 <div className="login-box">
-                    <label className="login-label">Email ID</label>
+                    <label className="login-label">Username</label>
                     <input type="text" className="login-input" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div className="login-box">
@@ -32,8 +32,8 @@ const LoginPage = () => {
                     <button type="submit" className="login-btn">Login</button>
                 </div>
                 <div className="login-row">
-                    <span className="login-span">Not a member?</span>
-                    <Link to="/login" className="login-link">Sign Up</Link>
+                    {/* <span className="login-span">Become a Seller?</span> */}
+                    <Link to="/signup" className="login-link">Register as Seller</Link>
                 </div>
             </form>
         </div>
