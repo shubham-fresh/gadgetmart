@@ -62,7 +62,7 @@ const ListComponent = (props) => {
                     <ul className="lc-list">
                         {
                             labels.map((item) => (
-                                <li className={`lc-list-item ${"wf-" + item.width}`}>
+                                <li className={`lc-list-item ${"wf-" + item.width}`} key={item.id}>
                                     <button className="lc-sort-btn">
                                         <span className="lc-col-head">{item.title}</span>
                                         <div className="lc-sort-box">
@@ -77,10 +77,10 @@ const ListComponent = (props) => {
                     </ul>
                     {
                         data.map((prod) => (
-                            <ul className="lc-list">
+                            <ul className="lc-list" key={prod.id}>
                                 {
                                     dataKeys.map((key, index) => (
-                                        <li className={`lc-list-item ${"wf-" + labels[index].width}`}>
+                                        <li className={`lc-list-item ${"wf-" + labels[index].width}`} key={index}>
                                             <span className="lc-col-title">{prod[key]}</span>
                                         </li>
                                     ))

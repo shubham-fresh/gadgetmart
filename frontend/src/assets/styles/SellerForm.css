@@ -29,6 +29,8 @@
 .seller-form {
     padding: 0 24px;
     gap: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sf-box {
@@ -44,6 +46,14 @@
     gap: 16px;
 }
 
+.sf-box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
 .sf-box-title {
     font-size: 18px;
     color: #212529;
@@ -54,6 +64,14 @@
 .sf-box-content {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 49%;
+}
+
+.sf-box-content textarea {
+    height: 150px; 
+    resize: none;
+    padding: 10px;
 }
 
 .sf-label {

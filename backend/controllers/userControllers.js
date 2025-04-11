@@ -1,6 +1,6 @@
 import User from "../models/userModel.js";
 
-const signIn = async(req, resp) => {
+const addUser = async(req, resp) => {
     try {
         const data = new User(req.body);
         const result = await data.save();
@@ -11,7 +11,7 @@ const signIn = async(req, resp) => {
     }
 };
 
-const logIn = async(req, resp) => {
+const getUser = async(req, resp) => {
     try {
         const result = await User.findOne(req.body);
         return resp.status(200).json(result);
@@ -21,5 +21,38 @@ const logIn = async(req, resp) => {
     }
 };
 
+const getAllUser = async(req, resp) => {
+    try {
+        const result = await User.find();
+        return resp.status(200).json(result);
+    }
+    catch (error) {
+        return resp.status(500).json({ "message": "Internal server error !!!" });
+    }
+};
 
-export default { signIn, logIn };
+const updateUser = async(req, resp) => {
+    try {
+        const result = await User.updateOne(
+            { "_id": req.params.id },
+            req.body
+        );
+        return resp.status(201).json(result);
+    }
+    catch (error) {
+        return resp.status(500).json({ "message": "Internal server error !!!" });
+    }
+};
+
+const deleteUser = async(req, resp) => {
+    try { 
+        const result = await User.deleteOne({ "_id": req.params.id });
+        return resp.status(201).json(result);
+    }
+    catch (error) {
+        return resp.status(500).json({ "message": "Internal server error !!!" });
+    }
+}
+
+
+export default { addUser, getUser, getAllUser, updateUser, deleteUser };

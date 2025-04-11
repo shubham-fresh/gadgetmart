@@ -17,11 +17,12 @@ import BrandList from './pages/BrandList';
 import SellerList from './pages/SellerList';
 import LoginPage from './auth/LoginPage';
 import SignUpPage from './auth/SignUpPage';
+import UserForm from './forms/UserForm';
 
 function App() {
 
   const isSidebarActive = useSelector((state) => state.basic.isSidebarActive);
-  const [ user, setUser ] = useState(false);
+  const [ user, setUser ] = useState(true);
 
   return (
     <BrowserRouter>
@@ -44,11 +45,13 @@ function App() {
             <Route path="/coupon/list" element={<CouponList/>}/>
             <Route path="/brand/list" element={<BrandList/>}/>
             <Route path="/seller/list" element={<SellerList/>}/>
+            <Route path="/user/list" element={<SellerList/>}/>
 
             <Route path="/product/add" element={<ProductForm/>}/>
             <Route path="/category/add" element={<CategoryForm/>}/>
             <Route path="/brand/add" element={<BrandForm/>}/>
             <Route path="/seller/add" element={<SellerForm/>}/>
+            <Route path="/user/add" element={<UserForm/>}/>
             <Route path="/coupon/add" element={<CouponForm/>}/>
           </Routes>
           {

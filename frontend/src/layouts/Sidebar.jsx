@@ -139,12 +139,29 @@ const Sidebar = () => {
         },
         {
             id: "8",
+            title: "Users",
+            icon: <TbBrandBing/>,
+            submenu: [
+                {
+                    id: 71,
+                    title: "User List",
+                    to: "/user/list"
+                },
+                {
+                    id: 72,
+                    title: "Add User",
+                    to: "/user/add"
+                }
+            ]
+        },
+        {
+            id: "9",
             title: "Login",
             icon: <TbBrandBing/>,
             to: "/login"
         },
         {
-            id: "9",
+            id: "10",
             title: "Signup",
             icon: <TbBrandBing/>,
             to: "/signup"
